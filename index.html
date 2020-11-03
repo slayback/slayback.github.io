@@ -35,20 +35,23 @@
         color: blue;
         display: inline-block;
         height: 36px;
+        width: 36px;
       }
 
-      /* MODULE STYLES */
+      .social-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .social-list > li {
+        display: inline-block;
+      }
+
+      /* BIO STYLES */
       .bio-wrapper {
         font-size: 24px;
-      }
-
-      .bio-wrapper:after {
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
+        overflow: hidden;
       }
 
       .bio-box {
@@ -56,12 +59,20 @@
         box-sizing: border-box;
         float: left;
         font-size: 1rem;
+        margin: 3%;
         padding: 2%;
-        width: 25%;
+        width: 19%;
       }
 
       .bio-box h3 {
+        color: black;
         font-size: 1.5em;
+        margin: -40px 0 1em;
+        text-align: center;
+      }
+
+      .bio-box img {
+        width: 100%;
       }
 
       .bio-copy {
@@ -78,17 +89,17 @@
   </head>
   <body>
 
-    <div class="full-hero">
+    <div class="full-hero hero-home">
       <h1>I'm an h1</h1>
-      <ul>
+      <ul class="social-list">
         <li>
-          <a href="https://example.com/">Link</a>
+          <a href="https://example.com/" class="social-link">Link</a>
         </li>
         <li>
-          <a href="https://example.com/">Link</a>
+          <a href="https://example.com/" class="social-link">Link</a>
         </li>
         <li>
-          <a href="https://example.com/">Link</a>
+          <a href="https://example.com/" class="social-link">Link</a>
         </li>
       </ul>
     </div>
@@ -97,6 +108,7 @@
 
     <div class="bio-wrapper">
       <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="https://twitter.com/mhartl" class="social-link">here</a>
         <div class="bio-copy">
@@ -116,6 +128,7 @@
       </div>
     </div>
       <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
         <div class="bio-copy">
@@ -128,6 +141,7 @@
       </div>
     </div>
       <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
         <div class="bio-copy">
@@ -140,6 +154,7 @@
       </div>
     </div>
       <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
         <h3>??</h3>
         <p>
           The Future
